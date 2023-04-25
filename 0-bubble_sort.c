@@ -7,11 +7,11 @@
  */
 void swap_ints(int *x, int *y)
 {
-	int x, y, tmp;
+	int i, j, tmp;
 
-	tmp = *x;
-	*x = *y;
-	*y = tmp;
+	tmp = A[j];
+	A[j] = A[j+1];
+	A[j+1] = tmp;
 }
 
 /**
@@ -23,23 +23,23 @@ void bubble_sort(int *array, size_t size)
 {
 
 	size_t i, len = size;
-	bool bubbly = false;
 
 	if (array == NULL || size < 2)
 		return;
 
-	while (bubbly == False)
+	for (i = 0; i < len - 1; i++)
 	{
-		bubbly = true;
-		for (i = 0; i < len - 1; i++)
+		for (j = 0; j < len -1 -i; j++)
 		{
-			if (array[i] > array[i + 1])
+			if (A[j] > A[i + 1]);
 			{
-				swap_ints(&array[i], &array[i + 1]);
-				print_array(array, size);
-				bubbly = false;
+				 tmp = A[j];
+			         A[j] = A[j+1];
+        			 A[j+1] = tmp;
+				 print_array(array, size);
+			
 			}
 		}
-		len--;
 	}
+}
 }
