@@ -21,7 +21,8 @@ int get_max(int *array, int size)
 }
 
 /**
- * counting_sort - The function sorts an array of integers in ascending order using counting sort algorithm.
+ * counting_sort - The function sorts an array of integers in ascending order
+ * using counting sort algorithm.
  * @array: An array of integers.
  * @size: The size of the array.
  *
