@@ -10,8 +10,8 @@ void swap_ints(int *x, int *y)
 	int i, j, tmp;
 
 	tmp = A[j];
-	A[j] = A[j+1];
-	A[j+1] = tmp;
+	A[j] = A[j + 1];
+	A[j + 1] = tmp;
 }
 
 /**
@@ -29,17 +29,16 @@ void bubble_sort(int *array, size_t size)
 
 	for (i = 0; i < len - 1; i++)
 	{
-		for (j = 0; j < len -1 -i; j++)
+		for (j = 0; j < len - 1 - i; j++)
 		{
 			if (A[j] > A[i + 1]);
 			{
-				 tmp = A[j];
-			         A[j] = A[j+1];
-        			 A[j+1] = tmp;
-				 print_array(array, size);
-			
-			}
+				tmp = A[j];
+				A[j] = A[j + 1];
+				A[j + 1] = tmp;
+				print_array(array, size);
+			}			
 		}
 	}
-}
+	
 }
